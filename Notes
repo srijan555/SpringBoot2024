@@ -41,6 +41,14 @@ cmd>netstat -ano | findstr :8081
 cmd>taskkill /PID 16280 /F
 
 ----------------------------------------------------------------------------------------------------
+weather api -> https://weatherstack.com/dashboard
+API key = e5fa4149ce2556aadf27ffcd93859663
 
+11 labs -> https://elevenlabs.io/docs/api-reference/text-to-speech/convert
+API key = sk_78c86b8edb44e151d3b8c4bf07bdcb127c0178ac37d107f3
 
+----------------------------------------------------------------------------------------------
+REDIS
+install redis - > windows powershell
+cmd> wsl --install
 

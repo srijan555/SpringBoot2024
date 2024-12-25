@@ -17,7 +17,7 @@ import java.util.List;
 import java.util.Optional;
 
 @Service
-@Component
+//@Component
 @Slf4j
 public class UserService {
 
