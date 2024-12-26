@@ -29,7 +29,7 @@ public class JournalEntryControllerV2 {
 
     @GetMapping
     public ResponseEntity<?> getAllJournalEntriesOfUser() {
-        Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
+        Authentication authentication = SecurityContextHolder.getContext().getAuthentication();//Basic auth
         User user = userService.findByUsername(authentication.getName());
         List<JournalEntry> all = user.getJournalEntries();
         if(all!=null && !all.isEmpty()){

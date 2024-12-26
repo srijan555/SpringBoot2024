@@ -52,3 +52,9 @@ REDIS
 install redis - > windows powershell
 cmd> wsl --install
 
+------------------------------------------------------------------------------------------
+JWT token -> jwt.io -> abc.def.ghi
+1. header -> encode(type=jwt   alg=hs256)
+2. payload -> encode(body)
+3. signature -> hmacsha256(secret  ,encode(header)+"."+encode(payload))
+
