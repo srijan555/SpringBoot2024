@@ -58,3 +58,27 @@ JWT token -> jwt.io -> abc.def.ghi
 2. payload -> encode(body)
 3. signature -> hmacsha256(secret  ,encode(header)+"."+encode(payload))
 
+---------------------------------------------------------------------------------------------
+SWAGGER
+API docs = http://localhost:8080/v3/api-docs
+UI = http://localhost:8080/swagger-ui/index.html
+
+---------------------------------------------------------------------------------------
+OAuth2.0
+console.cloud.google.com
+developers.google.com/oauthplayground
+scope = https://www.googleapis.com/auth/userinfo.email
+
+1. login with google
+2. google login page (client id, scope)
+3. login to google
+4. concent screen
+5. authorization code to leetcode/myApp
+6. frondend receives authCode
+7. frontend -(authCode)-> backend
+8. backend -(authCode,secretKey)-> google
+9. backend receives access token
+10. backend validate access token
+11. backend validate token, grant access to user
+--------------------------------
+
