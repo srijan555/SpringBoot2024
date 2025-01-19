@@ -1,0 +1,84 @@
+****MONGO DB
+To start - install mongo db
+mongo db compass - GUI
+install mongo db as a service
+to start/stop service(as admin) = cmd>net start/stop mongodb
+download mongo shell - to execute queries
+connection string = mongodb://localhost:27017
+tables=collections
+cols=fields
+rows=documents
+cmd>mongosh
+cmd>show dbs --> default dbs will be shown: admin, config, local
+cmd>use school --> create a database school if not present
+school>show collections
+school>db.students.insertOne({"name":"Ram","age":20})
+school>show collections --> students
+school>db.students.find().pretty() --> show the documents of collection
+school>db.students.find({name:"Ram"})
+school>db.students.deleteOne({name:"Ram"})
+install mongodb atlas
+aws -> mumbai
+username and password
+create user
+add my current ip address
+cluster -> group of nodes
+replication -> backup of your data copied to another server
+sharding -> data stored in distributed manner
+connect -> drivers
+username= educationaldumps  password= etXO2GL0Cizs12CW
+connection string = mongodb+srv://educationaldumps:<db_password>@cluster0.d77tz.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0
+
+-----------------------------------------------------------------------------------
+SPRING SECURITY
+user:d2d12d70-8de9-4084-bd0d-4e71aa1fadef
+Basic dXNlcjpkMmQxMmQ3MC04ZGU5LTQwODQtYmQwZC00ZTcxYWExZmFkZWY=
+WebSecurityConfigurerAdapter.configure() -> gives us customization options to Spring security
+
+--------------------------------------------------------------------------------------------------------
+server already in use:
+cmd>netstat -ano | findstr :8081
+cmd>taskkill /PID 16280 /F
+
+----------------------------------------------------------------------------------------------------
+weather api -> https://weatherstack.com/dashboard
+API key = e5fa4149ce2556aadf27ffcd93859663
+
+11 labs -> https://elevenlabs.io/docs/api-reference/text-to-speech/convert
+API key = sk_78c86b8edb44e151d3b8c4bf07bdcb127c0178ac37d107f3
+
+----------------------------------------------------------------------------------------------
+REDIS
+install redis - > windows powershell
+cmd> wsl --install
+
+------------------------------------------------------------------------------------------
+JWT token -> jwt.io -> abc.def.ghi
+1. header -> encode(type=jwt   alg=hs256)
+2. payload -> encode(body)
+3. signature -> hmacsha256(secret  ,encode(header)+"."+encode(payload))
+
+---------------------------------------------------------------------------------------------
+SWAGGER
+API docs = http://localhost:8080/v3/api-docs
+UI = http://localhost:8080/swagger-ui/index.html
+
+---------------------------------------------------------------------------------------
+OAuth2.0
+console.cloud.google.com
+developers.google.com/oauthplayground
+scope = https://www.googleapis.com/auth/userinfo.email
+
+1. login with google
+2. google login page (client id, scope)
+3. login to google
+4. concent screen
+5. authorization code to leetcode/myApp
+6. frondend receives authCode
+7. frontend -(authCode)-> backend
+8. backend -(authCode,secretKey)-> google
+9. backend receives access token
+10. backend validate access token
+11. backend validate token, grant access to user
+--------------------------------
+
